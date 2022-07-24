@@ -1,0 +1,255 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike",
+      "description": "Cheese - Mozzarella, Buffalo",
+      "type": "Clothing",
+      "price": "389.58",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/188x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 2,
+      "name": "Adidas",
+      "description": "Foie Gras",
+      "type": "Clothing",
+      "price": "165.20",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/129x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 3,
+      "name": "Puma",
+      "description": "Carrots - Purple, Organic",
+      "type": "Clothing",
+      "price": "161.86",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/158x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 4,
+      "name": "Toyota",
+      "description": "Soup - Canadian Pea, Dry Mix",
+      "type": "Car",
+      "price": "356.37",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/179x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 5,
+      "name": "Honda",
+      "description": "Cranberries - Fresh",
+      "type": "Car",
+      "price": "405.28",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/205x100.png/dddddd/000000"
+    },
+    {
+      "id": 6,
+      "name": "Skechers",
+      "description": "Raisin - Golden",
+      "type": "Clothing",
+      "price": "110.47",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/197x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 7,
+      "name": "Oreo",
+      "description": "Table Cloth 62x120 White",
+      "type": "Food",
+      "price": "158.13",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/142x100.png/dddddd/000000"
+    },
+    {
+      "id": 8,
+      "name": "Lay",
+      "description": "Scallops - Live In Shell",
+      "type": "Food",
+      "price": "211.22",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/201x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 9,
+      "name": "Banana",
+      "description": "Rosemary - Dry",
+      "type": "Food",
+      "price": "283.88",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/143x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 10,
+      "name": "Apple",
+      "description": "Nut - Pine Nuts, Whole",
+      "type": "Food",
+      "price": "430.94",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/208x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 11,
+      "name": "Apple",
+      "description": "Pork Salted Bellies",
+      "type": "Technology",
+      "price": "280.54",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/184x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 12,
+      "name": "Sumsung",
+      "description": "Beef - Kobe Striploin",
+      "type": "Technology",
+      "price": "129.28",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/249x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 13,
+      "name": "Testo",
+      "description": "Soup - Knorr, Veg / Beef",
+      "type": "Food",
+      "price": "48.71",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/215x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 14,
+      "name": "Xiaomi",
+      "description": "Table Cloth 53x53 White",
+      "type": "Technology",
+      "price": "301.59",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/186x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 15,
+      "name": "Tesla",
+      "description": "Snapple - Iced Tea Peach",
+      "type": "Car",
+      "price": "72.54",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/106x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 16,
+      "name": "Oneplus",
+      "description": "Stock - Beef, White",
+      "type": "Technology",
+      "price": "208.47",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/244x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 18,
+      "name": "Green Apple",
+      "description": "Lobster - Baby, Boiled",
+      "type": "Food",
+      "price": "77.46",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/201x100.png/dddddd/000000"
+    },
+    {
+      "id": 19,
+      "name": "Durian",
+      "description": "Radish - Pickled",
+      "type": "Food",
+      "price": "118.72",
+      "isBestSeller": false,
+      "image": "http://dummyimage.com/126x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 20,
+      "name": "BMW",
+      "description": "Sobe - Cranberry Grapefruit",
+      "type": "Car",
+      "price": "71.13",
+      "isBestSeller": true,
+      "image": "http://dummyimage.com/190x100.png/dddddd/000000"
+    },
+    {
+      "name": "Fish 1",
+      "type": "Food",
+      "description": "Fish is Good",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAANlBMVEXMzMzPz8+UlJSSkpKampqWlpadnZ3Ly8uioqLGxsaZmZm/v7+goKC6urqtra2wsLC7u7uoqKjZ4D4ZAAADmElEQVR4nO3XiY7jNhBFUe4UtVr//7N5Rcpu9zIYDBLETnAPZmTTImWzVCyxnQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA/xjtXq/f2tqpRP06MD3uPT03/+Oz5Ik8fevf1Tf+W0fT+caU309aS5rTuzX7sVE595Ndyerelkha1lv7qt1JSc9ern0pSzOpaVgudmmNA+Rgg9yuoQ93XeU7Tzeva3e1lE/61FnIOMYZ4KBYpTDp6e/FHyGH3zp8hx831prr4Sc3Fb8EaW9AZ8XNYNSA/BgSbqXXNZz+v7vqOGG/qqm8L17g300LYa9v0Czdfr1DMVyhy0sxynnXK78E+dTVnm6gvOekQSr+GYrc+D7BrKWdymPJsp28h5GNpy1EtFOsi7bWz/lHr99dbcnj3HIo9THNsfolTsVCc4Zxz81uckk30FuKioctY/j0UZ5jSGJCyevgl5EW97HTO7SowI+Pes1iMUCitc2yfQqG5rzq1x6PoRdm+W0jOcFiSWPZPezivcnmFYvSIW+rRVWhcXzJLtOOolwrL2lpb6m9+1ivcQ3HoFn8KheZ+aK4ltqKZaDEcNnUFbNaA6lrUOrjSfIRiHQOUGanXjKzyc4ZiJcVqx7ZO69QzxMrG+y4Qp/XwJRQKwBJT01xK1t1XKLbQm/OVRiHv98drD0UfUFrUAEsX5cJiUWh20Ao7VC3nqlBoKWrBvHbWP7qHYvq6QJTlqpGHbm2fmTVDb865r4vNYjeMUMzWI9wH9Cpq/47rcdOWM6Tqx1e8patsqsYV5Xie9TubrfB+86cw68mpsuDrHLee3E2T+TkUNutVj9qmo2WV3fxsl1UIlQ5WiP8Doah6mKrWW8HYnTut7nvLaruzqhp51RMm3Pyec3FjvXwPhctjQLIy0weo2PZks7WUbrWOrMhTM6+c8y+0vnS1Beqbnjn0huZaLRRa76c9GpJvUenRHwX9nrvvoWjXgN1CkRQUe46OOuEm1Qn7GiXH3L8snm+YGs12gTH1jbdak35mPsbnCs6qrbTXRHoobKPdtC2PybpuMT5CMatW2gAtizEg68mT67iMBW4rtsdMu9Wh8K6h8L62+rzlac1ffzZ9HPzjcG8+vWpfaW/tf+09Hs2nXiqbzU5Wf/m35vfnvm15frcH+pt7pHfcYgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4H/oL2Dscf3xb+ecAAAAASUVORK5CYII=",
+      "price": 250.75,
+      "isBestSeller": true,
+      "id": 25
+    },
+    {
+      "name": "retest",
+      "type": "Technology",
+      "description": "123",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAANlBMVEXMzMzPz8+UlJSSkpKampqWlpadnZ3Ly8uioqLGxsaZmZm/v7+goKC6urqtra2wsLC7u7uoqKjZ4D4ZAAADmElEQVR4nO3XiY7jNhBFUe4UtVr//7N5Rcpu9zIYDBLETnAPZmTTImWzVCyxnQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA/xjtXq/f2tqpRP06MD3uPT03/+Oz5Ik8fevf1Tf+W0fT+caU309aS5rTuzX7sVE595Ndyerelkha1lv7qt1JSc9ern0pSzOpaVgudmmNA+Rgg9yuoQ93XeU7Tzeva3e1lE/61FnIOMYZ4KBYpTDp6e/FHyGH3zp8hx831prr4Sc3Fb8EaW9AZ8XNYNSA/BgSbqXXNZz+v7vqOGG/qqm8L17g300LYa9v0Czdfr1DMVyhy0sxynnXK78E+dTVnm6gvOekQSr+GYrc+D7BrKWdymPJsp28h5GNpy1EtFOsi7bWz/lHr99dbcnj3HIo9THNsfolTsVCc4Zxz81uckk30FuKioctY/j0UZ5jSGJCyevgl5EW97HTO7SowI+Pes1iMUCitc2yfQqG5rzq1x6PoRdm+W0jOcFiSWPZPezivcnmFYvSIW+rRVWhcXzJLtOOolwrL2lpb6m9+1ivcQ3HoFn8KheZ+aK4ltqKZaDEcNnUFbNaA6lrUOrjSfIRiHQOUGanXjKzyc4ZiJcVqx7ZO69QzxMrG+y4Qp/XwJRQKwBJT01xK1t1XKLbQm/OVRiHv98drD0UfUFrUAEsX5cJiUWh20Ao7VC3nqlBoKWrBvHbWP7qHYvq6QJTlqpGHbm2fmTVDb865r4vNYjeMUMzWI9wH9Cpq/47rcdOWM6Tqx1e8patsqsYV5Xie9TubrfB+86cw68mpsuDrHLee3E2T+TkUNutVj9qmo2WV3fxsl1UIlQ5WiP8Doah6mKrWW8HYnTut7nvLaruzqhp51RMm3Pyec3FjvXwPhctjQLIy0weo2PZks7WUbrWOrMhTM6+c8y+0vnS1Beqbnjn0huZaLRRa76c9GpJvUenRHwX9nrvvoWjXgN1CkRQUe46OOuEm1Qn7GiXH3L8snm+YGs12gTH1jbdak35mPsbnCs6qrbTXRHoobKPdtC2PybpuMT5CMatW2gAtizEg68mT67iMBW4rtsdMu9Wh8K6h8L62+rzlac1ffzZ9HPzjcG8+vWpfaW/tf+09Hs2nXiqbzU5Wf/m35vfnvm15frcH+pt7pHfcYgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4H/oL2Dscf3xb+ecAAAAASUVORK5CYII=",
+      "price": 12333,
+      "isBestSeller": false,
+      "id": 26
+    },
+    {
+      "name": "test",
+      "type": "Food",
+      "description": "123",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAAANlBMVEXMzMzPz8+UlJSSkpKampqWlpadnZ3Ly8uioqLGxsaZmZm/v7+goKC6urqtra2wsLC7u7uoqKjZ4D4ZAAADmElEQVR4nO3XiY7jNhBFUe4UtVr//7N5Rcpu9zIYDBLETnAPZmTTImWzVCyxnQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA/xjtXq/f2tqpRP06MD3uPT03/+Oz5Ik8fevf1Tf+W0fT+caU309aS5rTuzX7sVE595Ndyerelkha1lv7qt1JSc9ern0pSzOpaVgudmmNA+Rgg9yuoQ93XeU7Tzeva3e1lE/61FnIOMYZ4KBYpTDp6e/FHyGH3zp8hx831prr4Sc3Fb8EaW9AZ8XNYNSA/BgSbqXXNZz+v7vqOGG/qqm8L17g300LYa9v0Czdfr1DMVyhy0sxynnXK78E+dTVnm6gvOekQSr+GYrc+D7BrKWdymPJsp28h5GNpy1EtFOsi7bWz/lHr99dbcnj3HIo9THNsfolTsVCc4Zxz81uckk30FuKioctY/j0UZ5jSGJCyevgl5EW97HTO7SowI+Pes1iMUCitc2yfQqG5rzq1x6PoRdm+W0jOcFiSWPZPezivcnmFYvSIW+rRVWhcXzJLtOOolwrL2lpb6m9+1ivcQ3HoFn8KheZ+aK4ltqKZaDEcNnUFbNaA6lrUOrjSfIRiHQOUGanXjKzyc4ZiJcVqx7ZO69QzxMrG+y4Qp/XwJRQKwBJT01xK1t1XKLbQm/OVRiHv98drD0UfUFrUAEsX5cJiUWh20Ao7VC3nqlBoKWrBvHbWP7qHYvq6QJTlqpGHbm2fmTVDb865r4vNYjeMUMzWI9wH9Cpq/47rcdOWM6Tqx1e8patsqsYV5Xie9TubrfB+86cw68mpsuDrHLee3E2T+TkUNutVj9qmo2WV3fxsl1UIlQ5WiP8Doah6mKrWW8HYnTut7nvLaruzqhp51RMm3Pyec3FjvXwPhctjQLIy0weo2PZks7WUbrWOrMhTM6+c8y+0vnS1Beqbnjn0huZaLRRa76c9GpJvUenRHwX9nrvvoWjXgN1CkRQUe46OOuEm1Qn7GiXH3L8snm+YGs12gTH1jbdak35mPsbnCs6qrbTXRHoobKPdtC2PybpuMT5CMatW2gAtizEg68mT67iMBW4rtsdMu9Wh8K6h8L62+rzlac1ffzZ9HPzjcG8+vWpfaW/tf+09Hs2nXiqbzU5Wf/m35vfnvm15frcH+pt7pHfcYgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4H/oL2Dscf3xb+ecAAAAASUVORK5CYII=",
+      "price": 123,
+      "isBestSeller": false,
+      "id": 28
+    }
+  ],
+  "images": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    }
+  ]
+}

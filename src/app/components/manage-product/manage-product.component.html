@@ -1,0 +1,46 @@
+<div class="container-fulid">
+  <div class="row">
+    <search placehoder="ค้นหาชื่อสินค้าที่ต้องการ" (onSerch)="getKeyword($event)"></search>
+  </div>
+  <div class="mb-3" style="margin-right: 10%; text-align: right">
+    <button-modal class="mx-3" [btnType]="'button'" [btnName]="'เพิ่มสินค้า'" [btnFooter]="'สร้าง'"
+      [modalType]="'addProduct'" (onClose)="onRefesh($event)"></button-modal>
+    <button *ngIf="setOfCheckedId.size > 0" nz-button nzDanger nzType="primary" (click)="showDeleteConfirm()">
+      <span>ลบสินค้า ({{setOfCheckedId.size}})</span>
+    </button>
+    <button *ngIf="setOfCheckedId.size === 0" nz-button nzDanger nzType="primary" disabled>
+      <span>ลบสินค้า</span>
+    </button>
+
+  </div>
+
+  <nz-table #rowSelectionTable nzShowSizeChanger nzBordered [nzData]="filteredProducts"
+    (nzCurrentPageDataChange)="onCurrentPageDataChange($event)">
+    <thead>
+      <tr>
+        <th [(nzChecked)]="checked" [nzIndeterminate]="indeterminate" (nzCheckedChange)="onAllChecked($event)"></th>
+        <th>ชื่อสินค้า</th>
+        <th nzColumnKey="type" [nzFilters]="filterType" [nzFilterFn]="filterTypeFn">ประเภท</th>
+        <th nzColumnKey="isBestSeller" [nzFilters]="filterBestSeller" [nzFilterFn]="filterBestSellerFn">ขายดี</th>
+        <th #sortTable nzColumnKey="price" [nzSortFn]="sortPriceFn">ราคา</th>
+        <th nzWidth="13%">จัดการ</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let product of rowSelectionTable.data">
+        <td [nzChecked]="setOfCheckedId.has(product.id)" (nzCheckedChange)="onItemChecked(product.id, $event)"></td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.type }}</td>
+        <td>{{ product.isBestSeller ? 'สินค้าขายดี' : '-'}}</td>
+        <td>{{ product.price | number }} ฿</td>
+        <td>
+          <button-modal [btnType]="'icon'" [iconName]="'file-text'" [modalType]="'viewProduct'" [productId]="product.id"
+            class="mx-3"></button-modal>
+          <button-modal [btnType]="'icon'" [iconName]="'edit'" [btnFooter]="'แก้ไข'" [modalType]="'editProduct'"
+            [productId]="product.id" (onClose)="onRefesh($event)" class="mx-3"></button-modal>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>

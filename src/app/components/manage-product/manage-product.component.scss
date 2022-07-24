@@ -1,0 +1,12 @@
+td {
+  text-align: center;
+  > button-modal, i {
+    cursor: pointer;
+    justify-content: center;
+  }
+}
+::ng-deep {
+  .ant-table-thead > tr > th {
+    text-align: center;
+  }
+}

@@ -1,0 +1,45 @@
+<!-- for create -->
+<form [formGroup]="form" *ngIf="!isEdit">
+  <input *ngIf="product.type === 'text'" nz-input [id]="product.id" [formControlName]="product.id" />
+
+  <nz-input-number *ngIf="product.type === 'number'" nz-input [id]="product.id" [formControlName]="product.id"
+    [nzMin]="1" [nzStep]="100" class="inputSize"></nz-input-number>
+  <textarea rows="4" *ngIf="product.type === 'textarea'" nz-input [id]="product.id"
+    [formControlName]="product.id"></textarea>
+
+  <nz-select *ngIf="product.type === 'select'" [id]="product.id" [formControlName]="product.id" class="inputSize">
+    <nz-option *ngFor="let item of product.select" [nzValue]="item" [nzLabel]="item"></nz-option>
+  </nz-select>
+
+  <nz-upload *ngIf="product.type === 'upload'" [id]="product.id" class="inputSize" nzAccept=".png, .jpg, jpeg"
+    nzAction="http://localhost:3000/images" [nzShowUploadList]="{ showRemoveIcon: true, showDownloadIcon: false}"
+    [nzHeaders]="{ authorization: 'authorization-text' }" (nzChange)="uploadImage($event)" [nzFileList]="fileList">
+    <button nz-button>
+      <i nz-icon nztype="upload"></i>
+      อัพโหลดภาพ
+    </button>
+  </nz-upload>
+</form>
+
+<!-- for edit -->
+<form [formGroup]="form" *ngIf="isEdit">
+  <input *ngIf="product.type === 'text'" nz-input [id]="product.id" [formControlName]="product.id" />
+
+  <nz-input-number *ngIf="product.type === 'number'" nz-input [id]="product.id" [formControlName]="product.id"
+    [nzMin]="1" [nzStep]="100" class="inputSize"></nz-input-number>
+  <textarea rows="4" *ngIf="product.type === 'textarea'" nz-input [id]="product.id"
+    [formControlName]="product.id"></textarea>
+
+  <nz-select *ngIf="product.type === 'select'" [id]="product.id" [formControlName]="product.id" class="inputSize">
+    <nz-option *ngFor="let item of product.select" [nzValue]="item" [nzLabel]="item"></nz-option>
+  </nz-select>
+
+  <nz-upload *ngIf="product.type === 'upload'" [id]="product.id" class="inputSize" nzAccept=".png, .jpg, jpeg"
+    nzAction="http://localhost:3000/images" [nzShowUploadList]="{ showRemoveIcon: true, showDownloadIcon: false}"
+    [nzHeaders]="{ authorization: 'authorization-text' }" (nzChange)="uploadImage($event)" [nzFileList]="fileList">
+    <button nz-button>
+      <i nz-icon nztype="upload"></i>
+      อัพโหลดภาพ
+    </button>
+  </nz-upload>
+</form>

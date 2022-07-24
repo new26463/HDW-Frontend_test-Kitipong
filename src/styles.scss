@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+@import "~ng-zorro-antd/style/index.min.css";
+@import "~ng-zorro-antd/button/style/index.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Athiti", sans-serif;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+}

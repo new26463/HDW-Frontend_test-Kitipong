@@ -1,0 +1,19 @@
+.rowInput {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  > label {
+    width: 35%;
+    align-self: center;
+  }
+}
+app-input {
+  width: 100%;
+}
+.invalid {
+  color: red;
+  font-size: smaller;
+}
+.productImg {
+  width: 100%;
+}

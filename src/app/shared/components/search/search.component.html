@@ -1,0 +1,8 @@
+<div class="searchStyle">
+  <nz-input-group [nzSuffix]="suffixIconSearch">
+    <input #searchValue type="text" nz-input [placeholder]="placehoder" (keyup)="onChange(searchValue.value)" />
+  </nz-input-group>
+  <ng-template #suffixIconSearch>
+    <i nz-icon nzType="search"></i>
+  </ng-template>
+</div>

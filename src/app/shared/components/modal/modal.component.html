@@ -1,0 +1,72 @@
+<button *ngIf="btnType === 'button'" nz-button nzType="primary" (click)="showModal()">
+  <span>{{btnName}}</span>
+</button>
+
+<i *ngIf="btnType === 'icon'" nz-icon [nzType]="iconName" nzTheme="outline" (click)="showModal()"></i>
+
+<nz-modal [(nzVisible)]=" isVisible" [nzTitle]="modalTitle" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()"
+  [nzOkLoading]="isOkLoading">
+
+  <ng-container *nzModalContent>
+    <div *ngIf="modalType === 'addProduct'">
+      <form [formGroup]="productForm">
+        <div *ngFor="let p of formInput">
+          <div class="rowInput">
+            <label [for]="p.id">{{p.name}} <span *ngIf="p.require" style="color:red">*</span></label>
+            <app-input [isEdit]="false" [product]="p" [form]="productForm"></app-input><br>
+          </div>
+          <div class="rolInput" style="margin-left: 27%;">
+            <span *ngIf="productControl[p.id].touched && productControl[p.id].status === 'INVALID'" class="invalid">
+              *กรุณาใส่{{p.name}}
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div *ngIf="modalType === 'viewProduct' && product">
+      <img nz-image class="productImg" [nzSrc]="product.image" [alt]="product.description" />
+      <h5 class="text-center pt-3">{{product.name}} {{product.isBestSeller? '[สินค้าขายดี]' : ''}}</h5>
+      <div class="container">
+        <p>ประเภทสินค้า : {{product.type}}</p>
+        <p>ราคาสินค้า : {{product.price | number}} ฿</p>
+        <p style="margin-bottom: 0;">รายละเอียด : {{product.description}}</p>
+      </div>
+    </div>
+
+    <div *ngIf="modalType === 'editProduct'">
+      <form [formGroup]="productForm">
+        <div *ngFor="let p of formInput">
+          <div class="rowInput">
+            <label [for]="p.id">{{p.name}} <span *ngIf="p.require" style="color:red">*</span></label>
+            <app-input [isEdit]="true" [product]="p" [form]="productForm"></app-input><br>
+          </div>
+          <div class="rolInput" style="margin-left: 27%;">
+            <span *ngIf="productControl[p.id].touched && productControl[p.id].status === 'INVALID'" class="invalid">
+              *กรุณาใส่{{p.name}}
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </ng-container>
+
+
+  <div *nzModalFooter>
+    <div *ngIf="modalType === 'addProduct'">
+      <button nz-button nzType="default" (click)="handleCancel()">ยกเลิก</button>
+      <button *ngIf="productForm.valid" nz-button nzType="primary" (click)="handleOk()">{{btnFooter}}</button>
+      <button *ngIf="!productForm.valid" nz-button nzType="primary" disabled>{{btnFooter}}</button>
+    </div>
+
+    <div *ngIf="modalType === 'viewProduct'">
+      <button nz-button nzType="default" (click)="handleCancel()">ยกเลิก</button>
+    </div>
+
+    <div *ngIf="modalType === 'editProduct'">
+      <button nz-button nzType="default" (click)="handleCancel()">ยกเลิก</button>
+      <button *ngIf="productForm.valid" nz-button nzType="primary" (click)="handleOk()">{{btnFooter}}</button>
+      <button *ngIf="!productForm.valid" nz-button nzType="primary" disabled>{{btnFooter}}</button>
+    </div>
+  </div>
+</nz-modal>
