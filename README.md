@@ -1,3 +1,3 @@
 # Run project
 
-Run `ng serve` and `node serber`
+Run `ng serve` and `node server`
